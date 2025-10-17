@@ -4,25 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>01 - Form</title>
-    <link rel="stylesheet" href="../_styles/styles.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>01 - Form</h1>
-    <form action="/submit">
-      <span>Name</span>
-      <input type="text" />
-      <br /><br />
-      <label>
-        Email
-        <input type="text" />
-      </label>
-      <br /><br />
-      <span>Favorite Character</span>
-      <div><input type="radio" id="spongebob" />Spongebob</div>
-      <div><input type="radio" id="patrick" />Patrick</div>
-      <div><input type="radio" id="sandy" />Sandy</div>
-      <br />
-      <button>Submit</button>
-    </form>
+    <main>
+      <h1>01 - Form</h1>
+      <form action="/submit">
+        <label for="name">Name</label>
+        <input type="text" id="name" />
+        <br /><br />
+        <label for="email"> Email</label>
+        <input type="email" id="email" />
+        <br /><br />
+        <fieldset>
+          <legend>Favorite Character</legend>
+          <div>
+            <input
+              type="radio"
+              id="spongebob"
+              name="favoriteCharacter"
+              value="spongebob"
+            />
+            <label for="spongebob">spongebob</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="patrick"
+              name="favoriteCharacter"
+              value="patrick"
+            />
+            <label for="patrick">patrick</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="sandy"
+              name="favoriteCharacter"
+              value="sandy"
+            />
+            <label for="sandy">sandy</label>
+          </div>
+        </fieldset>
+        <br />
+        <button>Submit</button>
+      </form>
+    </main>
   </body>
 </html>
