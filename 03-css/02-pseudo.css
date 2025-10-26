@@ -2,3 +2,8 @@
   width: 600px;
   margin: 40px auto;
 }
+p::first-letter{
+  text-transform: capitalize;
+  font-size: 75px;
+  font-weight: 500;
+}
