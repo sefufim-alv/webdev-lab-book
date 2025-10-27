@@ -1,6 +1,62 @@
-@media (min-width: 1024px) {
+body {
+  margin: 0;
+  background-color: blueviolet;
+  color: var(--white);
+}
+nav {
+  background-color: black;
+  height: auto;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  margin-bottom: 50px;
+}
+ul {
+  list-style: none;
+  gap: 30px;
+  margin-left: 10px;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+.main {
+  margin: 130px 10px 0;
+}
+@media (min-width: 700px) {
   body {
-    background: var(--green);
-    color: var(--white);
+    background-color: orange;
+    color: black;
+  }
+  nav {
+    height: 60px;
+    display: flex;
+    align-items: center;
+  }
+  ul {
+    display: flex;
+  }
+  a {
+    font-size: 30px;
+  }
+  .main {
+    margin: 70px 10px 0;
+  }
+  #parmesan,
+  #manchego {
+    margin: 0;
+  }
+}
+@media (min-width: 900px) {
+  body {
+    background-color: green;
+    color: white;
+  }
+  nav {
+    height: 50px;
+  }
+  a {
+    font-size: 25px;
   }
 }
