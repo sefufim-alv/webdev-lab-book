@@ -12,15 +12,57 @@
 }
 
 /* Flex Container 2 */
-
+.flex-container-2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+}
 /* Flex Container 3 */
-/* use height: 400px; on the container */
+.flex-container-3 {
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  align-items: end;
+}
 
 /* Flex Container 4 */
-
+.flex-container-4 {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  flex-direction: row;
+  justify-content: space-around;
+}
 /* Flex Container 5 */
+.flex-container-5 {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+#section-5 .flex-item:nth-child(1),
+#section-5 .flex-item:nth-child(3),
+#section-5 .flex-item:nth-child(6) {
+  height: 300px;
+}
+
+#section-5 .flex-item:nth-child(2),
+#section-5 .flex-item:nth-child(8) {
+  height: 400px;
+}
+#section-5 .flex-item:nth-child(4),
+#section-5 .flex-item:nth-child(5),
+#section-5 .flex-item:nth-child(7) {
+  height: 200px;
+}
 
 /* Flex Container 6 */
+.flex-container-6 {
+  display: flex;
+  height: 300px;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
 
 .flex-container-6 .flex-item {
   width: 400px;
